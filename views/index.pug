@@ -1,0 +1,16 @@
+html
+  head
+    title= title
+    link(rel="stylesheet" href="stories.css")
+  body(class=`${theme}`)
+    h1= slide
+  script(type='text/javascript').
+    window.data = !{dataJSON};
+    window.theme = "!{theme}";
+  script(src='stories.js').
+
+  script.
+    const body = document.querySelector('body');
+    body.innerHTML = window.renderTemplate(window.data.alias, window.data);
+    console.log(window.data)
+

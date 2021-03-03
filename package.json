@@ -1,0 +1,31 @@
+{
+  "name": "shri-2021-task-1",
+  "version": "1.0.0",
+  "description": "В этом репозитории находятся материалы тестового задания «Шаблоны Stories» для [17-й Школы разработки интерфейсов](https://yandex.ru/promo/academy/shri) (лето-2021, Москва).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanushkaPr/shri-2021-task-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanushkaPr/shri-2021-task-1/issues"
+  },
+  "homepage": "https://github.com/ivanushkaPr/shri-2021-task-1#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

@@ -1,7 +1,7 @@
-function renderTemplate(page, theme) {
+function renderTemplate(alias, data) {
   return `
-  <h1>${page}</h1>$
-  <p>${theme}</p>
+  <h1>${alias}</h1>$
+  <p>${data.title}</p>
   `
 }
 
