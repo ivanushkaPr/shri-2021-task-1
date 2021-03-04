@@ -1,7 +1,7 @@
 function renderTemplate(alias, data) {
   return `
   <h1>${alias}</h1>$
-  <p>${data.title}</p>
+  <p>${data}</p>
   `
 }
 

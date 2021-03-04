@@ -7,8 +7,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-  const dataJSON = data[req.query.slide];
-  res.render('index', {theme: req.query.theme ? req.query.theme : 'theme_dark', dataJSON: JSON.stringify(dataJSON)});
+  res.render('index', {data: JSON.stringify(data), slide: req.query.slide, theme: req.query.theme ? req.query.theme : "theme_black"});
 });
 
 

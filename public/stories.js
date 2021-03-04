@@ -1,7 +1,9 @@
 window.renderTemplate = function (alias, data) {
+  console.log(data)
+
   return `
   <h1>${alias}</h1>$
-  <p>${data.data.title}</p>
+  <p>${JSON.stringify(data)}</p>
   `
 }
 

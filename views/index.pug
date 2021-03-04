@@ -5,12 +5,17 @@ html
   body(class=`${theme}`)
     h1= slide
   script(type='text/javascript').
-    window.data = !{dataJSON};
-    window.theme = "!{theme}";
+    window.data = "#{data}";
+    window.slide = #{slide};
+    
   script(src='stories.js').
 
   script.
     const body = document.querySelector('body');
-    body.innerHTML = window.renderTemplate(window.data.alias, window.data);
-    console.log(window.data)
+    const data = JSON.parse(window.data.replace(/&quot;/g,'"'));
+    console.log(window.slide, 'slide')
+    const pageData = data[window.slide];
+    body.innerHTML = window.renderTemplate(pageData.alias, pageData.data);
+
+
 
